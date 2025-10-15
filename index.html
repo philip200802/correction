@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <body class="dark-mode">
+        <div id="inner-input">
+        <input type="number" name="" id="number1">
+        <input type="number" name="" id="number2">
+            </div>
+            <div id="Inner-button">        <button onclick="Add()">+</button>
+        <button onclick="Product()">*</button>
+        <button onclick="Quotient()">/</button>
+        <button onclick="Difference()">-</button>
+        </div>
+
+        <p id="showAnswer">The answer is ...</p>
+
+    </body>
+    <script>
+        const Add = () => {
+            const answer = Number(number1.value) + Number (number2.value)
+            showAnswer.innerHTML = answer
+        }
+         const Product = () => {
+            const answer = Number(number1.value) * Number (number2.value)
+            showAnswer.innerHTML = answer
+        }
+         const Quotient = () => {
+            const formula = Number(number1.value) / Number (number2.value)
+            const  answer= (formula).toFixed(2)
+            showAnswer.innerHTML = answer
+        }
+         const Difference = () => {
+            const answer = Number(number1.value) - Number (number2.value)
+            showAnswer.innerHTML = answer
+        }
+
+    </script>
+</body>
+
+</html>

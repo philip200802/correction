@@ -1,0 +1,85 @@
+    :root {
+      --background-color: #0a0a0f;
+      --button-color: #00ffff;
+      --button-hover: #6a0dad;
+      --text-color: #ffffff;
+      --input-color: transparent;
+      --shadow-color: rgba(0, 255, 255, 0.5);
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #inner-input {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    input {
+      max-width: 40rem;
+      height: 4rem;
+      color: var(--text-color);
+      background-color: var(--input-color);
+      font-size: 1.5rem;
+      border: 2px solid var(--button-color);
+      padding: 0 1rem;
+      border-radius: 0.5rem;
+      outline: none;
+      box-shadow: 0 0 15px var(--shadow-color);
+    }
+
+    input:focus {
+      border-color: var(--button-hover);
+      box-shadow: 0 0 20px var(--button-hover);
+    }
+
+    button {
+      background-color: var(--button-color);
+      width: 10rem;
+      height: 3rem;
+      border: none;
+      border-radius: 1rem;
+      margin: 0.3rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 20px var(--shadow-color);
+       animation: 2s bounce infinite alternate;
+    }
+
+    button:hover {
+      background-color: var(--button-hover);
+      color: var(--text-color);
+      box-shadow: 0 0 25px var(--button-hover);
+      transform: scale(1.09);
+    }
+
+    #showAnswer {
+      font-size: 2.2rem;
+      font-weight: bold;
+      font-family: 'Courier New', monospace;
+      margin-top: 1rem;
+      color: var(--button-color);
+      text-shadow: 0 0 10px var(--shadow-color);
+    }
+ @keyframes bounce {
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-10px);
+  }
+ }
