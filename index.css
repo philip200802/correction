@@ -58,6 +58,7 @@
       transition: all 0.3s ease-in-out;
       box-shadow: 0 0 20px var(--shadow-color);
        animation: 2s bounce infinite alternate;
+      
     }
 
     button:hover {
@@ -87,8 +88,14 @@
   input{
     width: 18rem !important;
   }
-
+  button{
+    width: 9rem;
+  }
+#showAnswer{
+font-size: 1.8rem;
+}
   #Inner-button{
-    margin-left: 1.2rem !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
  }
